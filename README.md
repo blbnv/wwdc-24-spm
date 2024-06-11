@@ -1,10 +1,10 @@
 # WWDC 24 - Swift Package Manager
 
 **Problem**
-We experience usual "Reloading packages" that lead to the complete freeze of XCode every time the branch is being switched, or a new file is created/renamed. 
+We experience usual "Reloading packages" that lead to the complete freeze of Xcode every time the branch is being switched, or a new file is created/renamed. 
 This is a sandbox project that helps to reproduce the problem at smaller scale with a few potential ideas we wanna consult with Apple folks.
 
-*Environment*: XCode 15.0-15.4
+*Environment*: Xcode 15.0-15.4
 
 **Project overview**
 
@@ -14,7 +14,7 @@ This is a sandbox project that helps to reproduce the problem at smaller scale w
 
 3. We've added about 60 modules and a few dependencies to this sandbox, which is totally enough to reproduce a problem.
 
-4. As a potential solution to reduce time waiting and prevent XCode from hang, we try to bring another Swift Package as a wrapper over 3rd-party library we use ([example](https://github.com/blbnv/wwdc-24-spm/tree/main/FirebaseWrapper)) and consume it as a local package [accessing by the path](https://github.com/blbnv/wwdc-24-spm/tree/main/FirebaseWrapper).
+4. As a potential solution to reduce time waiting and prevent Xcode from hang, we try to bring another Swift Package as a wrapper over 3rd-party library we use ([example](https://github.com/blbnv/wwdc-24-spm/tree/main/FirebaseWrapper)) and consume it as a local package [accessing by the path](https://github.com/blbnv/wwdc-24-spm/tree/main/FirebaseWrapper).
 
 **Some questions and topics we would love to discuss**
 1. `dependency` versus `binaryTarget` - if I use `.binaryTarget`, the "Reloading packages" issue is not reproducible. Do you think this is the right way to move forward with our problem?
