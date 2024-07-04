@@ -22,7 +22,8 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/apollographql/apollo-ios", exact: "1.10.0")
+        .package(url: "https://github.com/apollographql/apollo-ios", exact: "1.10.0"),
+        .package(path: "../ModuleX")
     ],
     targets: [
         /// Local Binaries
@@ -74,7 +75,9 @@ let package = Package(
         ),
         .target(
             name: "Module53",
-            dependencies: [],
+            dependencies: [
+                
+            ],
             swiftSettings: .common
         ),
         .target(
@@ -347,14 +350,14 @@ let package = Package(
         .target(
             name: "Module2",
             dependencies: [
-                .product(name: "Apollo", package: "apollo-ios", moduleAliases: ["ApolloAPI": "ApolloSomething"])
+                .product(name: "Apollo", package: "apollo-ios")
             ],
             swiftSettings: .common
         ),
         .target(
             name: "Module3",
             dependencies: [
-                
+                "ModuleX"
             ],
             swiftSettings: .common
         ),

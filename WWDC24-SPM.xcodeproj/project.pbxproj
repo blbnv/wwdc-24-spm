@@ -37,6 +37,7 @@
 		1B319A5E2C0A196A00EFAB56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B319A612C0A196A00EFAB56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1B417D6F2C108DF000DD8D24 /* Modules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Modules; sourceTree = SOURCE_ROOT; };
+		1BE939442C36BF9600E3B09C /* ModuleX */ = {isa = PBXFileReference; lastKnownFileType = text; path = ModuleX; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +73,7 @@
 		1B319A592C0A196900EFAB56 /* WWDC24-SPM */ = {
 			isa = PBXGroup;
 			children = (
+				1BE939442C36BF9600E3B09C /* ModuleX */,
 				1B417D6F2C108DF000DD8D24 /* Modules */,
 				1B319A5A2C0A196900EFAB56 /* WWDCApp.swift */,
 				1B319A5C2C0A196900EFAB56 /* ContentView.swift */,
