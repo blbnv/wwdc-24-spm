@@ -1,0 +1,4 @@
+framework module ApolloAPI {
+  header "ApolloAPI-Swift.h"
+  requires objc
+}

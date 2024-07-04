@@ -6,5 +6,11 @@
 //
 
 import Foundation
+import Apollo
 
-final class Module2 {}
+public final class Module2 {
+    public init() {}
+    public func foo() {
+        print("Module2 Apollo version - \(Apollo.Constants.ApolloVersion)")
+    }
+}

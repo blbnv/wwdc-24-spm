@@ -3,6 +3,9 @@
 
 import PackageDescription
 
+//let apolloOld: PackageDescription.Package.Dependency = .package(url: "https://github.com/apollographql/apollo-ios", exact: "1.13.0")
+//apolloOld.moduleAliases = ["ApolloAPI": "ApolloAPIOLD"]
+
 let package = Package(
     name: "WWDC24Modules",
     defaultLocalization: "en",
@@ -19,6 +22,7 @@ let package = Package(
         )
     ],
     dependencies: [
+        .package(url: "https://github.com/apollographql/apollo-ios", exact: "1.10.0")
     ],
     targets: [
         /// Local Binaries
@@ -343,6 +347,7 @@ let package = Package(
         .target(
             name: "Module2",
             dependencies: [
+                .product(name: "Apollo", package: "apollo-ios", moduleAliases: ["ApolloAPI": "ApolloSomething"])
             ],
             swiftSettings: .common
         ),

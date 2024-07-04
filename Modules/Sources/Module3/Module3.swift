@@ -1,2 +1,7 @@
-class Module3 {
+
+
+public class Module3 {
+    public static func foo() {
+        
+    }
 }
