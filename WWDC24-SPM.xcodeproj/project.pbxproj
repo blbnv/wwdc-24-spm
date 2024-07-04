@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B0F19F52C36AE15000193C2 /* WWDC24Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 1B0F19F42C36AE15000193C2 /* WWDC24Modules */; };
-		1B0F19F62C36AE15000193C2 /* WWDC24Modules in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 1B0F19F42C36AE15000193C2 /* WWDC24Modules */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1B0F19F82C36AF11000193C2 /* WWDC24Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 1B0F19F72C36AF11000193C2 /* WWDC24Modules */; };
 		1B319A5B2C0A196900EFAB56 /* WWDCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B319A5A2C0A196900EFAB56 /* WWDCApp.swift */; };
 		1B319A5D2C0A196900EFAB56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B319A5C2C0A196900EFAB56 /* ContentView.swift */; };
 		1B319A5F2C0A196A00EFAB56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B319A5E2C0A196A00EFAB56 /* Assets.xcassets */; };
@@ -23,7 +22,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1B0F19F62C36AE15000193C2 /* WWDC24Modules in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B0F19F52C36AE15000193C2 /* WWDC24Modules in Frameworks */,
+				1B0F19F82C36AF11000193C2 /* WWDC24Modules in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +111,7 @@
 			);
 			name = "WWDC24-SPM";
 			packageProductDependencies = (
-				1B0F19F42C36AE15000193C2 /* WWDC24Modules */,
+				1B0F19F72C36AF11000193C2 /* WWDC24Modules */,
 			);
 			productName = "WWDC24-SPM";
 			productReference = 1B319A572C0A196900EFAB56 /* WWDC24-SPM.app */;
@@ -381,7 +379,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1B0F19F42C36AE15000193C2 /* WWDC24Modules */ = {
+		1B0F19F72C36AF11000193C2 /* WWDC24Modules */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = WWDC24Modules;
 		};
