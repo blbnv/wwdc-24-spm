@@ -1,4 +1,4 @@
-// swift-tools-version: 5.10
+// swift-tools-version: 5.9
     // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -76,8 +76,6 @@ let package = Package(
         )
     ],
     dependencies: [
-//        .package(url: "https://github.com/firebase/firebase-ios-sdk", exact: "10.27.0"),
-        .package(path: "../FirebaseWrapper")
     ],
     targets: [
         /// Local Binaries
@@ -114,7 +112,6 @@ let package = Package(
         .target(
             name: "Module56",
             dependencies: [
-                "FirebaseWrapper"
             ],
             swiftSettings: .common
         ),
@@ -338,7 +335,6 @@ let package = Package(
         .target(
             name: "Module12",
             dependencies: [
-                "FirebaseWrapper"
             ],
             swiftSettings: .common
         ),
@@ -381,9 +377,6 @@ let package = Package(
         .target(
             name: "Module1",
             dependencies: [
-//                // If I use dependencies
-//                .product(name: "FirebaseAnalytics", package: "firebase-ios-sdk"),
-                "FirebaseWrapper",
                 "Lottie",
                 // local
                 "Module2",

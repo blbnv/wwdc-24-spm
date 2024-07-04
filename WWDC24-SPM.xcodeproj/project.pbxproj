@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0F19F52C36AE15000193C2 /* WWDC24Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 1B0F19F42C36AE15000193C2 /* WWDC24Modules */; };
+		1B0F19F62C36AE15000193C2 /* WWDC24Modules in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 1B0F19F42C36AE15000193C2 /* WWDC24Modules */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		1B319A5B2C0A196900EFAB56 /* WWDCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B319A5A2C0A196900EFAB56 /* WWDCApp.swift */; };
 		1B319A5D2C0A196900EFAB56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B319A5C2C0A196900EFAB56 /* ContentView.swift */; };
 		1B319A5F2C0A196A00EFAB56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B319A5E2C0A196A00EFAB56 /* Assets.xcassets */; };
 		1B319A622C0A196A00EFAB56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B319A612C0A196A00EFAB56 /* Preview Assets.xcassets */; };
 		1B417D702C108DF000DD8D24 /* Modules in Resources */ = {isa = PBXBuildFile; fileRef = 1B417D6F2C108DF000DD8D24 /* Modules */; };
-		1B417D722C108E4F00DD8D24 /* WWDC24Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 1B417D712C108E4F00DD8D24 /* WWDC24Modules */; };
-		1B417D732C108E4F00DD8D24 /* WWDC24Modules in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 1B417D712C108E4F00DD8D24 /* WWDC24Modules */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1B417D732C108E4F00DD8D24 /* WWDC24Modules in Embed Frameworks */,
+				1B0F19F62C36AE15000193C2 /* WWDC24Modules in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,7 +36,6 @@
 		1B319A5C2C0A196900EFAB56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1B319A5E2C0A196A00EFAB56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B319A612C0A196A00EFAB56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1B3664232C179626007C07CE /* FirebaseWrapper */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FirebaseWrapper; sourceTree = SOURCE_ROOT; };
 		1B417D6F2C108DF000DD8D24 /* Modules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Modules; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -45,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B417D722C108E4F00DD8D24 /* WWDC24Modules in Frameworks */,
+				1B0F19F52C36AE15000193C2 /* WWDC24Modules in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +71,6 @@
 		1B319A592C0A196900EFAB56 /* WWDC24-SPM */ = {
 			isa = PBXGroup;
 			children = (
-				1B3664232C179626007C07CE /* FirebaseWrapper */,
 				1B417D6F2C108DF000DD8D24 /* Modules */,
 				1B319A5A2C0A196900EFAB56 /* WWDCApp.swift */,
 				1B319A5C2C0A196900EFAB56 /* ContentView.swift */,
@@ -115,7 +113,7 @@
 			);
 			name = "WWDC24-SPM";
 			packageProductDependencies = (
-				1B417D712C108E4F00DD8D24 /* WWDC24Modules */,
+				1B0F19F42C36AE15000193C2 /* WWDC24Modules */,
 			);
 			productName = "WWDC24-SPM";
 			productReference = 1B319A572C0A196900EFAB56 /* WWDC24-SPM.app */;
@@ -383,7 +381,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1B417D712C108E4F00DD8D24 /* WWDC24Modules */ = {
+		1B0F19F42C36AE15000193C2 /* WWDC24Modules */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = WWDC24Modules;
 		};

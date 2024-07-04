@@ -6,11 +6,9 @@
 //
 
 import Foundation
-//import DatadogRUM
-//import FirebaseRemoteConfigInterop
 
 public final class Foo {
     public static func test() {
-//        print(FirebaseLoggerLevel.error)
+        print("App Launch")
     }
 }
