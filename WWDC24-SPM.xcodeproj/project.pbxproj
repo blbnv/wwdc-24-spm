@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B0F19F82C36AF11000193C2 /* WWDC24Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 1B0F19F72C36AF11000193C2 /* WWDC24Modules */; };
+		1B0F19FA2C36AF70000193C2 /* SDKs in Resources */ = {isa = PBXBuildFile; fileRef = 1B0F19F92C36AF70000193C2 /* SDKs */; };
 		1B319A5B2C0A196900EFAB56 /* WWDCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B319A5A2C0A196900EFAB56 /* WWDCApp.swift */; };
 		1B319A5D2C0A196900EFAB56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B319A5C2C0A196900EFAB56 /* ContentView.swift */; };
 		1B319A5F2C0A196A00EFAB56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B319A5E2C0A196A00EFAB56 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1B0F19F92C36AF70000193C2 /* SDKs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SDKs; sourceTree = "<group>"; };
 		1B319A572C0A196900EFAB56 /* WWDC24-SPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WWDC24-SPM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B319A5A2C0A196900EFAB56 /* WWDCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDCApp.swift; sourceTree = "<group>"; };
 		1B319A5C2C0A196900EFAB56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 		1B319A4E2C0A196900EFAB56 = {
 			isa = PBXGroup;
 			children = (
+				1B0F19F92C36AF70000193C2 /* SDKs */,
 				1B319A592C0A196900EFAB56 /* WWDC24-SPM */,
 				1B319A582C0A196900EFAB56 /* Products */,
 				1B319A6A2C0A2B9000EFAB56 /* Frameworks */,
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B417D702C108DF000DD8D24 /* Modules in Resources */,
+				1B0F19FA2C36AF70000193C2 /* SDKs in Resources */,
 				1B319A622C0A196A00EFAB56 /* Preview Assets.xcassets in Resources */,
 				1B319A5F2C0A196A00EFAB56 /* Assets.xcassets in Resources */,
 			);
