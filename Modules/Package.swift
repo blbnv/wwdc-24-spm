@@ -3,9 +3,6 @@
 
 import PackageDescription
 
-//let apolloOld: PackageDescription.Package.Dependency = .package(url: "https://github.com/apollographql/apollo-ios", exact: "1.13.0")
-//apolloOld.moduleAliases = ["ApolloAPI": "ApolloAPIOLD"]
-
 let package = Package(
     name: "WWDC24Modules",
     defaultLocalization: "en",
@@ -18,12 +15,13 @@ let package = Package(
             type: .static,
             targets: [
                 "Module1",
+                "Module60"
             ]
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/apollographql/apollo-ios", exact: "1.10.0"),
-        .package(path: "../ModuleX")
+        .package(path: "/LegacyApollo"),
+        .package(url: "https://github.com/apollographql/apollo-ios", exact: "1.14.1"),
     ],
     targets: [
         /// Local Binaries
@@ -39,7 +37,10 @@ let package = Package(
         /// Modules
         .target(
             name: "Module60",
-            dependencies: [],
+            dependencies: [
+                .product(name: "LegacyApollo", package: "LegacyApollo"),
+                .product(name: "Apollo", package: "apollo-ios"),
+            ],
             swiftSettings: .common
         ),
         .target(
@@ -350,14 +351,14 @@ let package = Package(
         .target(
             name: "Module2",
             dependencies: [
-                .product(name: "Apollo", package: "apollo-ios")
+                
             ],
             swiftSettings: .common
         ),
         .target(
             name: "Module3",
             dependencies: [
-                "ModuleX"
+                
             ],
             swiftSettings: .common
         ),

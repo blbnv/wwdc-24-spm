@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Module1
+import Module60
 
 struct ContentView: View {
     var body: some View {
@@ -19,6 +20,7 @@ struct ContentView: View {
         .padding()
         .onAppear {
             Foo.test()
+            Module60.printVersion()
         }
     }
 }
