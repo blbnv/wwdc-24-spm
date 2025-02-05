@@ -51,6 +51,7 @@ let package = Package(
         .target(
             name: "Module60",
             dependencies: [
+                "DependencyInjection"
             ],
             swiftSettings: .common
         ),

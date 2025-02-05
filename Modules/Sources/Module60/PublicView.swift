@@ -5,12 +5,18 @@
 //  Created by Oleksandr Balabanov on 02/02/2025.
 //
 
+import DependencyInjection
 import SwiftUI
 
 public struct WWDC24ModulesViewSixty: View {
     public var body: some View {
         Text("Hello, World!")
+        Text(DI.now()().description)
     }
     
     public init() {}
+}
+
+#Preview {
+    WWDC24ModulesViewSixty()
 }
