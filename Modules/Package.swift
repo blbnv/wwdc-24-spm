@@ -17,6 +17,12 @@ let package = Package(
                 "Module1",
                 "Module60"
             ]
+        ),
+        .library(
+            name: "DependencyInjection",
+            targets: [
+                "DependencyInjection"
+            ]
         )
     ],
     dependencies: [
