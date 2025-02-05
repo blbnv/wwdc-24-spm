@@ -20,8 +20,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(path: "/LegacyApollo"),
-        .package(url: "https://github.com/apollographql/apollo-ios", exact: "1.14.1"),
+        
     ],
     targets: [
         /// Local Binaries
@@ -34,12 +33,18 @@ let package = Package(
         .binaryTarget(name: "Instabug",
                       url: "https://github.com/Instabug/Instabug-SP/releases/download/13.1.0/Instabug-XCFramework.zip",
                       checksum: "741e7509968ae7f2f9b7de93299c045a5fd4f0801b018a0fa65b8291bd1751d2"),
+        /// Frameworks
+        .target(
+            name: "DependencyInjection",
+            dependencies: [
+                
+            ],
+            swiftSettings: .common
+        ),
         /// Modules
         .target(
             name: "Module60",
             dependencies: [
-                .product(name: "LegacyApollo", package: "LegacyApollo"),
-                .product(name: "Apollo", package: "apollo-ios"),
             ],
             swiftSettings: .common
         ),
