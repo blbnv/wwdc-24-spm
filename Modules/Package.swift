@@ -350,6 +350,7 @@ let package = Package(
                 "Module14",
                 "Module15",
                 "Module16",
+                "Module60",
             ],
             swiftSettings: .common
         ),
